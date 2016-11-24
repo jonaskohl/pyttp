@@ -6,6 +6,7 @@ import colorama
 from colorama import Fore, Back, Style
 import os
 
+
 # THE FOLLOWING VARIABLES CAN BE EDITED BY THE USER
 class Config:
     port_number = 9012  # The port for the server to listen on
@@ -29,7 +30,7 @@ class pyttp:
     @staticmethod
     def intro():
         colorama.init()
-        #(width, height) = Util.get_terminal_size()
+        # (width, height) = Util.get_terminal_size()
         print(Fore.LIGHTBLACK_EX, end="")  # Dark gray color
         print("*" * 65)
         print(Fore.LIGHTGREEN_EX, end="")  # Lime color
@@ -84,6 +85,6 @@ class Util:
             #    cr = (25, 80)
         return int(cr[1]), int(cr[0])
 
+
 p = pyttp()
 p.pyttp()
-

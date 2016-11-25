@@ -30,13 +30,13 @@ class Config:  # Default values
 
 
 class Pyttp:
-    version = "1.0.1"
+    version = "1.0.11"
 
     def pyttp(self):
         self.intro()
         print("Loading settings from file %s..." % (Fore.LIGHTYELLOW_EX + SettingsFile.settings_filename + ".cfg" + Style.RESET_ALL))
         settingsfile_exist = os.path.isfile(SettingsFile.settings_filename + ".cfg")
-        print(settingsfile_exist)
+        
         if settingsfile_exist:
             print(Fore.GREEN + "Settings file exists! Now loading..." + Style.RESET_ALL)
             c = self.get_config()

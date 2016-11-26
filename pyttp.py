@@ -29,7 +29,7 @@ class Config:  # Default values
     workspace = "html/"
     openbrowser = True
 
-version = "1.0.20" # Do NOT change this value!
+version = "1.0.21" # Do NOT change this value!
 
 
 def pyttp():
@@ -74,7 +74,7 @@ def pyttp():
         print("Port is free")
 
     print("Server should now be accessible from %s!" % ("http://127.0.0.1:%i" % Config.port_number))
-    print("Server requests will be display below:")
+    print("Server requests will be displayed below:")
     
     if Config.openbrowser:
         webbrowser.open("http://127.0.0.1:%i" % Config.port_number, 0)

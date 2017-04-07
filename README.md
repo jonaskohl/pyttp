@@ -1,7 +1,7 @@
 # pyttp
 Lightweight Python web server
 
-##What is pyttp?
+## What is pyttp?
 pyttp is a small and light-weight HTTP server written in [Python](https://python.org).
 
 ## Download
